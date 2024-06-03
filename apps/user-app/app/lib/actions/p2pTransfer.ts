@@ -4,7 +4,6 @@ import { authOptions } from "../auth";
 import prisma from "@repo/db/client";
 
 export async function p2pTransfer(to: string, amount: number) {
-  console.log("GITHUB WORKFLOW example change");
   const session = await getServerSession(authOptions);
   const from = session?.user?.id;
   if (!from) {
