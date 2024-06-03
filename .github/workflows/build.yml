@@ -1,8 +1,9 @@
-name: Build Succeeds on PR
+name: Build on PR
 
 on:
   pull_request:
     branches:
+      - main
       - main
 
 jobs:
